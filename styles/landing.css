@@ -63,6 +63,10 @@ body {
     font-size: 16px;
 }
 
+#landing-header nav a:first-child {
+    font-family: mont-heavy;
+}
+
 #landing-header nav a:hover {
     color: #11346F;
 }

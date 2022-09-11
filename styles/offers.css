@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(118.72deg, #AECCFF -18.14%, #197AFF 165.34%);
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: mont-light;
+    src: url(../assets/fonts/mont-light.otf) format("truetype");
+}
+
+@font-face {
+    font-family: mont-heavy;
+    src: url(../assets/fonts/mont-heavy.otf) format("truetype");
+}
+
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+#offers-top {
+    width: 100vw;
+    height: 97px;
+    background: #11346F;
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#offers-main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#offers-main-div p {
+    font-family: mont-light;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.round {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#offers-header {
+    margin-top: 30px;
+    font-family: mont-light;
+    font-style: normal;
+    line-height: 49px;
+    margin-bottom: 4rem;
+}
+
+#offers-header h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: #11346F;
+    font-size: 37px;
+}
+
+#offers-header h2 {
+    display: flex;
+    justify-content: center;
+    font-family: mont-heavy;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 37px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+#offers-header div {
+    display: flex;
+    justify-content: center;
+}
+
+#offers-header div img {
+    width: 300px;
+}
+
+#cards {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.card {
+    width: 358px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #d1d1d1 0%, #f0f5ff 100%);
+    border: 1.5px solid #197AFF;
+    border-radius: 18px;
+    margin-right: 2.1rem;
+    opacity: 0.9;
+    transition: all 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card:hover {
+    background: #FFFFFF;
+}
+
+.card-image {
+    width:282px;
+    height: 106px;
+    object-fit: contain;
+    margin-top: -40px;
+    filter: sepia(80%);  
+}
+
+.card-header {
+    font-family: mont-light;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 37px;
+    color: #11346F;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-price {
+    font-family: mont-heavy;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    color: #11346F;
+}
+
+.free-shipping {
+    font-family: mont-heavy;
+    font-style: normal;
+    opacity: 0.9;
+    font-size: 13px;
+    color: #11346F;
+}
+
+#first-card > .free-shipping {
+    margin-bottom: 20px;
+}
+
+#first-card > .row-center {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 1.5rem;
+}
+
+#first-card .row-center p {
+    font-family: mont-heavy;
+    font-style: normal;
+    font-size: 12px;
+    color: #11346F;
+}
+
+#first-card .row-center .light {
+    font-family: mont-light;
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: #11346F;
+}
+
+#second-card .light {
+    font-family: mont-light;
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: #11346F;
+}
+
+#third-card .light {
+    font-family: mont-light;
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: #11346F;
+}
+
+#first-card #interest-free {
+    margin-bottom: 2rem;
+}
+
+#second-card #interest-free-2 {
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+    gap: 10px;
+}
+
+#third-card #interest-free-3 {
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+    gap: 10px;
+}
+
+#first-card #interest-free img{
+    width: 80px;
+    height: 20px;
+    margin-top: 0.1rem;
+}
+
+#first-card .row-center .light span{
+    font-family: mont-heavy;
+}
+
+#second-card .light span{
+    font-family: mont-heavy;
+}
+
+#third-card .light span{
+    font-family: mont-heavy;
+}
+
+.card-button {
+    width: 331px;
+    height: 53px;
+    background: #197AFF;
+    box-shadow: 0px 7px 14px rgba(25, 122, 255, 0.5);
+    border: none;
+    border-radius: 60px;
+    margin-bottom: 2.9rem;
+    font-family: mont-heavy;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    background: url('../assets/pictures/button-background.jpeg') no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    filter: sepia(100%);
+    transition: .2s all ease-in-out;
+    opacity: 0.7;
+}
+
+.card-button:hover {
+    background-size: 150% auto;
+    cursor: pointer;
+    filter: sepia(0%);  
+    opacity: 1;
+}
+
+.pay-methods {
+    justify-content: space-around;
+    width: 100%;
+}
+
+.pay-methods a:first-of-type img{
+    height: 40px;
+    width: 40px;
+    margin-right: -6px;
+    margin-top: -12px;
+}
+
+.pay-methods a:first-of-type img:hover{
+    height: 40px;
+    width: 45px;
+}
+
+.pay-methods a img {
+    height: 15px;
+    width: auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.pay-methods a img:hover {
+    height: 18px;
+    width: auto;
+    cursor: pointer;
+}
+
+.most-popular {
+    width: 126px;
+    height: 28px;
+    background: #57AC73;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: mont-light;
+    font-weight: 900;
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 1px;
+    text-transform: uppercase;
+}
+
+#best-value {
+    width: 106px;
+    background: #AC5780 !important;
+
+}
+
+#second-card {
+    position: relative;
+}
+
+#second-card .card-header {
+    font-family: mont-light;
+    font-weight: 900;
+    margin-top: 0;
+}
+
+#second-card .card-header span {
+    font-family: mont-heavy;
+    color: #197AFF;
+}
+
+#second-card .card-header {
+    margin-bottom: 4px;
+}
+
+.arrow {
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    transform: rotate(80.25deg);
+}
+
+.old-price {
+    font-family: mont-heavy;
+    text-decoration: line-through;
+    color: #93A2BB;
+    margin-left: 30px;
+}
+
+#second-free-shipping {
+    margin-left: -9.7rem;
+    margin-bottom: 0;
+}
+
+#third-free-shipping {
+    margin-left: -9.7rem;
+    margin-bottom: 0;
+}
+
+.offer-container {
+    position: relative;
+    z-index: -20;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 331px;
+    height: 73px;
+    border: 1px solid #AECCFF;
+    border-radius: 19px;
+    margin-bottom: 10px;
+}
+
+.offer-container-round {
+    position: absolute;
+    left: 0;
+    height: 37px;
+    width: 46%;
+    margin-top: -10px;
+    text-align: center;
+    padding: 10px;
+    background: #BFF5BE;
+    border: 1px solid #99D298;
+    border-radius: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: mont-heavy;
+    font-size: 12px;
+    color: #11346F;
+    text-transform: uppercase;
+}
+
+.offer-container-other {
+    position: absolute;
+    width: 70%;
+    right: 0;
+    height: 37px;
+    margin-top: -10px;
+    z-index: -10;
+    background: #F0F6FF;    
+    border: 1px solid #AECCFF;
+    border-radius: 80px;
+    padding-right: 10px;
+    padding-left: 60px;
+    text-align: end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 3px;
+    font-family: mont-heavy;
+    font-style: normal;
+    font-size: 12px;
+    color: #11346F;
+}
+
+.offer-container-other {
+    text-transform: capitalize;
+}
+
+.offer-container-other img {
+    height: 20px;
+    width: 20px;
+}
+
+.offer-container-other span {
+    margin-left: 0;
+}
+
+.offer-container p {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: mont-heavy;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    color: #11346F;
+}
+
+#third-card {
+    position: relative;
+}
+
+#third-card .card-header {
+    font-family: mont-light;
+    font-weight: 900;
+    margin-top: 0;
+}
+
+#third-card .card-header span {
+    font-family: mont-heavy;
+    color: #197AFF;
+}
+
+#third-card .card-header {
+    margin-bottom: 4px;
+}
+
+#sand-watch {
+    margin-bottom: -3px;
+    margin-right: 5px;
+}
+
+.modal {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/offers.css">
+    <link rel="icon" href="./assets/pictures/singleMassager.png">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div id="root"></div>
+    <div id="main-container">
+        <div id="offers-top" class="flex-row">
+            <div class="flex-row" id="offers-main-div">
+                <div class="round">
+                    <img src="./assets/pictures/offer-1.png" alt="">
+                </div>
+                <p>FREE 2-DAY SHIPPING IN THE UNITED STATES!</p>
+            </div>
+
+            <div class="flex-row" id="offers-main-div">
+                <div class="round">
+                    <img src="./assets/pictures/offer-2.png" alt="">
+                </div>
+                <p>30 DAY 100% MONEY BACK GUARANTEE</p>
+            </div>
+
+            <div class="flex-row" id="offers-main-div">
+                <div class="round">
+                    <img src="./assets/pictures/offer-3.png" alt="">
+                </div>
+                <p>RAVE REVIEWS FROM OUR CUSTOMERS</p>
+            </div>
+        </div>
+        <div class="flex-column" id="offers-header">
+            <h1>Buy More & Save More!</h1>
+            <h2>Limited-Time Offer</h2>
+            <div>
+
+                <img src="./assets/pictures/line-bottom.png" alt="#">
+            </div>
+        </div>
+        <div id="cards" class="flex-row">
+            <!-- first card -->
+            <div class="card" id="first-card">
+                <img class="card-image" src="./assets/pictures/singleMassager.png" alt="">
+                <h3 class="card-header">Buy MagicMassage™</h3>
+                <h3 class="card-price">$69.95</h3>
+                <p class="free-shipping">+ Free Shipping</p>
+                <div class="flex-row row-center" >
+                    <img src="./assets/pictures/card-mark.png" alt="">
+                    <p>30-Day Money Back</p>
+                </div>
+                <div class="flex-row row-center" id="interest-free">
+                    <p class="light">or 4 interest-free installments of <span>$17.50</span> by</p>
+                    <img src="./assets/pictures/card-afterpay.png" alt="">
+                </div>
+                <button onclick="clickHandle('first')" class="card-button" id="first-button">get your magic</button>
+                <div class="flex-row pay-methods">
+                    <a href="https://www.americanexpress.com/" target="_blank">
+                        <img src="./assets/pictures/payment-1.png" alt="amex">
+                    </a>
+                    <a href="https://www.apple.com/apple-pay/" target="_blank">
+                        <img src="./assets/pictures/payment-2.png" alt="apple pay">
+                    </a>
+                    <a href="https://pay.google.com/about/" target="_blank">
+                        <img src="./assets/pictures/payment-3.png" alt="google pay">
+                    </a>
+                    <a href="https://www.adyen.com/payment-methods/maestro" target="_blank">
+                        <img src="./assets/pictures/payment-4.png" alt="maestro">
+                    </a>
+                    <a href="https://www.mastercard.us/en-us.html" target="_blank">
+                        <img src="./assets/pictures/payment-5.png" alt="mastercard">
+                    </a>
+                    <a href="https://www.paypal.com/ge/home" target="_blank">
+                        <img src="./assets/pictures/payment-6.png" alt="paypal">
+                    </a>
+                    <a href="https://www.visa.com.ge/en_GE" target="_blank">
+                        <img src="./assets/pictures/payment-7.png" alt="visa">
+                    </a>
+                </div>
+            </div>
+            <!-- second card -->
+            <div class="card" id="second-card">
+                <img class="card-image" src="./assets/pictures/3massagers.png" alt="">
+                <div class="most-popular">
+                    <p>most popular</p>
+                </div>
+                <img class="arrow" src="./assets/pictures/Arrow.png" alt="">
+                <h3 class="card-header">Buy 2 + <span>Get 1 Free</span></h3>
+                <div class="flex-row">
+                    <h3 class="card-price">$139.90</h3>
+                    <h3 class="card-price old-price">$209.85</h3>
+                </div>
+                <p class="free-shipping" id="second-free-shipping">+ Free Shipping</p>
+                <div class="flex-row" id="interest-free-2">
+                    <p class="light">or 4 interest-free installments of <span>$34.99</span> by</p>
+                    <img src="./assets/pictures/card-afterpay.png" alt="">
+                </div>
+                <div class="offer-container">
+                    <div class="flex-row">
+                        <div class="offer-container-round">
+                            <span>save $70 - 33% off!</span>
+                        </div>
+                        <div class="flex-row offer-container-other">
+                            <img src="./assets/pictures/card-mark.png" alt="">
+                            <span>30-day money back</span>
+                        </div>
+                    </div>
+                    <p>6 orders at this price remaining</p>
+                </div>
+                <button onclick="clickHandle('second')" class="card-button" id="second-button">get your magic</button>
+                <div class="flex-row pay-methods">
+                    <a href="https://www.americanexpress.com/" target="_blank">
+                        <img src="./assets/pictures/payment-1.png" alt="amex">
+                    </a>
+                    <a href="https://www.apple.com/apple-pay/" target="_blank">
+                        <img src="./assets/pictures/payment-2.png" alt="apple pay">
+                    </a>
+                    <a href="https://pay.google.com/about/" target="_blank">
+                        <img src="./assets/pictures/payment-3.png" alt="google pay">
+                    </a>
+                    <a href="https://www.adyen.com/payment-methods/maestro" target="_blank">
+                        <img src="./assets/pictures/payment-4.png" alt="maestro">
+                    </a>
+                    <a href="https://www.mastercard.us/en-us.html" target="_blank">
+                        <img src="./assets/pictures/payment-5.png" alt="mastercard">
+                    </a>
+                    <a href="https://www.paypal.com/ge/home" target="_blank">
+                        <img src="./assets/pictures/payment-6.png" alt="paypal">
+                    </a>
+                    <a href="https://www.visa.com.ge/en_GE" target="_blank">
+                        <img src="./assets/pictures/payment-7.png" alt="visa">
+                    </a>
+                </div>
+            </div>
+            <!-- third card -->
+            <div class="card" id="third-card">
+                <img class="card-image" src="./assets/pictures/6massagers.png" alt="">
+                <div class="most-popular" id="best-value">
+                    <p>best value</p>
+                </div>
+                <img class="arrow" src="./assets/pictures/Arrow.png" alt="">
+                <h3 class="card-header">Buy 2 + <span>Get 2 Free</span></h3>
+                <div class="flex-row">
+                    <h3 class="card-price">$209.85</h3>
+                    <h3 class="card-price old-price">$349.95</h3>
+                </div>
+                <p class="free-shipping" id="third-free-shipping">+ Free Shipping</p>
+                <div class="flex-row" id="interest-free-3">
+                    <p class="light">or 4 interest-free installments of <span>$52.50</span> by</p>
+                    <img src="./assets/pictures/card-afterpay.png" alt="">
+                </div>
+                <div class="offer-container">
+                    <div class="flex-row">
+                        <div class="offer-container-round">
+                            <span>save $140 - 40% off!</span>
+                        </div>
+                        <div class="flex-row offer-container-other">
+                            <img src="./assets/pictures/card-mark.png" alt="">
+                            <span>30-day money back</span>
+                        </div>
+                    </div>
+                    <p>
+                        <img id="sand-watch" src="./assets/pictures/sand-timer.png" alt="">
+                        6 orders at this price remaining
+                    </p>
+                </div>
+                <button onclick="clickHandle('third')" class="card-button" id="third-button">get your magic</button>
+                <div class="flex-row pay-methods">
+                    <a href="https://www.americanexpress.com/" target="_blank">
+                        <img src="./assets/pictures/payment-1.png" alt="amex">
+                    </a>
+                    <a href="https://www.apple.com/apple-pay/" target="_blank">
+                        <img src="./assets/pictures/payment-2.png" alt="apple pay">
+                    </a>
+                    <a href="https://pay.google.com/about/" target="_blank">
+                        <img src="./assets/pictures/payment-3.png" alt="google pay">
+                    </a>
+                    <a href="https://www.adyen.com/payment-methods/maestro" target="_blank">
+                        <img src="./assets/pictures/payment-4.png" alt="maestro">
+                    </a>
+                    <a href="https://www.mastercard.us/en-us.html" target="_blank">
+                        <img src="./assets/pictures/payment-5.png" alt="mastercard">
+                    </a>
+                    <a href="https://www.paypal.com/ge/home" target="_blank">
+                        <img src="./assets/pictures/payment-6.png" alt="paypal">
+                    </a>
+                    <a href="https://www.visa.com.ge/en_GE" target="_blank">
+                        <img src="./assets/pictures/payment-7.png" alt="visa">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
