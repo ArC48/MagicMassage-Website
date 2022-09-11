@@ -480,9 +480,83 @@ body {
 }
 
 .modal {
+    border: 1px solid #11346F;
+    height: 40rem;
+    width: 80rem;
+    background-color: #11346F;
     position: absolute;
     z-index: 10;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.modal-header {
+    font-family: mont-heavy;
+    color: #FFFFFF;
+}
+
+.modal-text {
+    font-size: 20px;
+    font-family: mont-light;
+    font-weight: 900;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    margin: 2rem 0;
+    width: 20rem;
+    text-align: center;
+}
+
+.modal-buttons-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-button-back {
+    width: 331px;
+    height: 53px;
+    background: #197AFF;
+    box-shadow: 0px 7px 14px rgba(25, 122, 255, 0.5);
+    border: none;
+    border-radius: 60px;
+    margin-bottom: 2.9rem;
+    font-family: mont-heavy;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    background: #197AFF;
+    transition: .2s all ease-in-out;
+    opacity: 0.7;
+}
+
+.modal-button-back:hover {
+    cursor: pointer;
+    border: #197AFF;
+    background: #FFFFFF;
+    color: #197AFF;
+}
+
+.modal-button-stay {
+    background: none;
+    border: none;
+    color: #BFF5BE;
+    font-size: 16px;
+    font-family: mont-heavy;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.modal-button-stay:hover {
+    cursor: pointer;
+    color: #197AFF;
+}
+
+.modal-pic {
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 4rem;
 }
