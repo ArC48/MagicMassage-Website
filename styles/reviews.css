@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    scroll-behavior: smooth;
+    background: #F6F8FC;
+}
+
+@font-face {
+    font-family: mont-light;
+    src: url(../assets/fonts/mont-light.otf) format("truetype");
+}
+
+@font-face {
+    font-family: mont-heavy;
+    src: url(../assets/fonts/mont-heavy.otf) format("truetype");
+}
+
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+h1 {
+    font-family: mont-light;
+    font-weight: 900;
+    color: #213786;
+}
+
+h1 span {
+    color: #197AFF;
+    font-family: mont-heavy;
+}
+
+#header {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#stars {
+    justify-content: space-between;
+}
+
+#stars div img {
+    width: 100px;
+    height: 20px;
+}
+
+#stars div span {
+    margin-top: 1px;
+    margin-left: 6px;
+    font-family: mont-heavy;
+    font-size: 14px;
+    color: #11346F;
+}
+
+.card-container {
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    border-radius: 10px;
+    width: 24%;
+    height: auto;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+.card-container:last-of-type {
+    margin-right: 0;
+}
+
+.review-pic {
+    width: 100%;
+}
+
+.justify-between {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.justify-between p {
+    font-family: mont-heavy !important;
+    font-size: 14px !important;
+    color: #11346F !important;
+}
+
+.justify-between img {
+    height: 25px;
+    width: 25px;
+    margin-top: 14px;
+}
+
+.stars {
+    margin-left: 20px;
+    margin-bottom: 1rem;
+}
+
+#cards .card-container p {
+    margin: 0 1rem;
+    text-align: justify;
+    font-family: mont-light;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 26px;
+    color: #262626;
+}
+
+.card-container {
+    margin-bottom: 5rem;
+    padding-bottom: 1rem;
+}
+
+#review-button {
+    width: 133px;
+    height: 30px;
+    background: #F6F8FC;
+    border: 1px solid #213786;
+    border-radius: 5px;
+    color: #3A3075;
+    transition: all 0.3s ease-in-out;
+}
+
+#review-button:hover {
+    background: #3A3075;
+    color: #F6F8FC;
+    border: none;
+    cursor: pointer;
+}

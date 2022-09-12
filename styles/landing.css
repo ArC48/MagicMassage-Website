@@ -18,6 +18,10 @@ body {
     src: url(../assets/fonts/mont-heavy.otf) format("truetype");
 }
 
+.landing-main-container {
+    margin-bottom: 3rem;
+}
+
 #landing-top {
     width: 100vw;
     height: 39px;
@@ -273,8 +277,8 @@ body {
     position: absolute;
     width: 393px;
     height: 101px;
-    right: 200px;
-    bottom: 3rem;
+    right: 100px;
+    bottom: 1rem;
     background: rgba(234, 242, 255, 0.1);
     border: 1px solid rgba(174, 204, 255, 0.5);
     border-radius: 110px;
@@ -327,7 +331,7 @@ img#stars {
 p#review-comment {
     margin: 20px 0;
     width: 90%;
-    color: #000000;
+    color: #000000e5;
     font-family: mont-heavy;
     font-size: 11px;
     font-weight: 500;

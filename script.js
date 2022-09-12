@@ -30,7 +30,7 @@ modalButtonBack.onclick = () => backButtonHandle();
 
 modalButtonBack.textContent = 'return to main page';
 modalButtonStay.textContent = 'close';
-congrats.setAttribute('src', './assets/pictures/success.png')
+congrats.setAttribute('src', '../assets/pictures/success.png')
 
 
 goBack.append(modalButtonBack);
@@ -74,6 +74,6 @@ const stayButtonHandle =() => {
 }
 
 const backButtonHandle = () => {
-    goBack.setAttribute('href', './index.html');
+    goBack.setAttribute('href', '../index.html');
     modal.style.display = 'none';
 }

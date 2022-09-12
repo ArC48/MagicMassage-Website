@@ -4,13 +4,10 @@
     box-sizing: border-box;
 }
 
-html {
-    height: 100%;
-}
-
 body {
     background: linear-gradient(118.72deg, #AECCFF -18.14%, #197AFF 165.34%);
     background-repeat: no-repeat;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -35,7 +32,7 @@ body {
 }
 
 #offers-top {
-    width: 100vw;
+    width: 100%;
     height: 97px;
     background: #11346F;
     backdrop-filter: blur(4px);
@@ -110,6 +107,7 @@ body {
     display: flex;
     justify-content: center;
     margin-right: 20px;
+    margin-bottom: 5rem;
 }
 
 .card {
@@ -123,17 +121,18 @@ body {
     border-radius: 18px;
     margin-right: 2.1rem;
     opacity: 0.9;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.card:hover {
+    background: #FFFFFF;
 }
 
 .card:last-child {
     margin-right: 0;
 }
 
-.card:hover {
-    background: #FFFFFF;
-}
 
 .card-image {
     width:282px;
