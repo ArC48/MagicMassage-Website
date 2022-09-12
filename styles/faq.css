@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    scroll-behavior: smooth;
+    background: #11346F;
+}
+
+@font-face {
+    font-family: mont-light;
+    src: url(../assets/fonts/mont-light.otf) format("truetype");
+}
+
+@font-face {
+    font-family: mont-heavy;
+    src: url(../assets/fonts/mont-heavy.otf) format("truetype");
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    font-family: mont-light;
+    font-weight: 900;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+#header h1 span {
+    font-family: mont-heavy;
+}
+
+#faq-content {
+    width: 70%;
+    margin: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#faq-img {
+    max-width: 476px;
+    max-height: 398px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#faq-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown {
+    min-width: 15rem;
+    position: relative;
+    margin: 3rem;
+    margin-top: 0;
+}
+
+
+
+.select {
+    background: #194081;
+    color: #FFFFFF;
+    font-family: mont-light;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #31548E;
+    border-radius:9px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.select:hover {
+    background: #3b69b4;
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+}
+
+.caret-rotate {
+    transform: rotate(180deg);
+}
+
+.menu {
+    padding: 0.2em 0.5em;
+    background: #11346f;
+    border: 1px solid #31548E;
+    /* border-radius:9px; */
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    color: #AECCFF;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+}
+
+.menu-open {
+    border-radius: 0px 0px 9px 9px;
+    display: block;
+    opacity: 1;
+}
