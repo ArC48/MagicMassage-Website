@@ -737,9 +737,13 @@ body {
         padding: 0 10px;
     }
 
+    #landing-mainText {
+        text-align: center;
+    }
+
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 421px) {
     .box-header {
         font-size: 10px;
     }

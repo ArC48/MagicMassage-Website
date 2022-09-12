@@ -71,18 +71,18 @@ body {
 }
 
 #faq-img img {
+    object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 
 .dropdown {
     min-width: 15rem;
     position: relative;
-    margin: 3rem;
+    margin: 2.8rem;
     margin-top: 0;
 }
-
-
 
 .select {
     background: #194081;
@@ -135,4 +135,58 @@ body {
     border-radius: 0px 0px 9px 9px;
     display: block;
     opacity: 1;
+}
+
+@media only screen and (max-width: 1061px) {
+    .flex-row {
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #faq-img {
+    width: 80vw;
+    height: 200px;
+    margin-bottom: 3rem;
+    object-fit: cover;
+    }
+
+    #faq-img img {
+        object-position: 0 -30px;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .dropdown {
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+
+    .select {
+        width: 100%;
+    }
+
+    #header {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .selected {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    #header {
+        font-size: 20px;
+    }
+
+    .menu-open {
+        top: 3.5rem;
+    }
+
+    .dropdown {
+        margin-bottom: 3rem;
+    }
 }

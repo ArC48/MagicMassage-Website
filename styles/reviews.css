@@ -149,3 +149,53 @@ h1 span {
     border: none;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 840px) {
+
+#cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:baseline;
+}
+
+.card-container {
+    width: 45%;
+    margin-bottom: 1rem;
+    margin-right: 0;
+    height: 32rem;
+}
+}
+
+@media only screen and (max-width: 656px) {
+    h1 {
+        text-align: center;
+    }
+
+    #responsive-column {
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container {
+        width: 45%;
+        margin-bottom: 1rem;
+        margin-right: 0;
+        height: 35rem;
+    }
+}
+
+@media only screen and (max-width: 656px) {
+    .card-container {
+        width: 100%;
+        margin-bottom: 1rem;
+        margin-right: 0;
+        height: auto;
+    }
+
+    #cards .card-container p {
+        font-size: 20px;
+    }
+}
